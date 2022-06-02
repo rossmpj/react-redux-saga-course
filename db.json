@@ -1,0 +1,47 @@
+{
+  "entries": [
+    {
+      "id": 2,
+      "description": "Watter bill redux"
+    },
+    {
+      "id": 3,
+      "description": "Rent redux"
+    },
+    {
+      "id": 4,
+      "description": "Power bill"
+    },
+    {
+      "id": 1234,
+      "description": "Work new"
+    }
+  ],
+  "values": [
+    {
+      "id": 1,
+      "value": 1000,
+      "isExpense": false
+    },
+    {
+      "id": 2,
+      "value": 20,
+      "isExpense": true
+    },
+    {
+      "id": 3,
+      "value": 300,
+      "isExpense": true
+    },
+    {
+      "id": 4,
+      "value": 50,
+      "isExpense": false
+    },
+    {
+      "id": 1234,
+      "value": 1,
+      "isExpense": false
+    }
+  ]
+}
