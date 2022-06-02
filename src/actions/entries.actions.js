@@ -6,6 +6,7 @@ const types = {
   REMOVE_ENTRY: 'REMOVE_ENTRY',
   REMOVE_ENTRY_RESULT: 'REMOVE_ENTRY_RESULT',
   UPDATE_ENTRY: 'UPDATE_ENTRY',
+  UPDATE_ENTRY_RESULT: 'UPDATE_ENTRY_RESULT',
   ADD_ENTRY_RESULT: 'ADD_ENTRY_RESULT',
 }
 export default types;
@@ -18,8 +19,8 @@ export const removeEntryRedux = (id) => {
   return { type: types.REMOVE_ENTRY, payload: { id } }
 }
 
-export const updateEntryRedux = (id, entry) => {
-  return { type: types.UPDATE_ENTRY, payload: { id, entry } }
+export const updateEntryRedux = (id, entryDetails) => {
+  return { type: types.UPDATE_ENTRY, payload: { id, entryDetails } }
 }
 
 export const getAllEntries = () => {
@@ -30,6 +31,6 @@ export const populateEntries = (entries) => {
   return { type: types.POPULATE_ENTRIES, payload: entries }
 }
 
-export const populateEntryDetail = (id, entryDetail) => {
-  return { type: types.POPULATE_ENTRY_DETAILS, payload: {id,entryDetail} }
+export const populateEntryDetail = (id, entryDetails) => {
+  return { type: types.POPULATE_ENTRY_DETAILS, payload: { id, entryDetails } }
 }

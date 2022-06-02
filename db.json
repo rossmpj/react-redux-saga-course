@@ -1,6 +1,10 @@
 {
   "entries": [
     {
+      "id": 1,
+      "description": "Redux test"
+    },
+    {
       "id": 2,
       "description": "Watter bill redux"
     },
@@ -15,6 +19,14 @@
     {
       "id": 1234,
       "description": "Work new"
+    },
+    {
+      "description": "testN",
+      "id": "b3ad1754-fb6b-4f82-a048-66f0cc3b0000"
+    },
+    {
+      "id": "8acdd0be-e3ba-48f3-a6a5-d3a4509dbcc2",
+      "description": "test"
     }
   ],
   "values": [
@@ -42,6 +54,16 @@
       "id": 1234,
       "value": 1,
       "isExpense": false
+    },
+    {
+      "isExpense": true,
+      "value": "300",
+      "id": "b3ad1754-fb6b-4f82-a048-66f0cc3b0000"
+    },
+    {
+      "id": "8acdd0be-e3ba-48f3-a6a5-d3a4509dbcc2",
+      "isExpense": true,
+      "value": "12"
     }
   ]
 }

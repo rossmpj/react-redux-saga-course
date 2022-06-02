@@ -3,12 +3,11 @@ import { call, put, takeLatest } from "redux-saga/effects";
 import entriesTypes from '../actions/entries.actions'
 
 export function* addEntrySaga() {
-  while (true) {
-    yield takeLatest(entriesTypes.ADD_ENTRY, addEntry)
-  }
+  yield takeLatest(entriesTypes.ADD_ENTRY, addEntry)
 }
 
-async function* addEntry({ payload }) {
+//  Una f* no puede ser asíncrona: redux-saga doesn't support async generators
+function* addEntry({ payload }) {
   yield call(addEntries, payload);
   yield call(addEntryDetails, payload);
   yield put({ type: entriesTypes.ADD_ENTRY_RESULT, payload });
